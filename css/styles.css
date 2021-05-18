@@ -1,0 +1,51 @@
+/* #212121; */
+
+/* #2196F3; */
+
+/* колір основного тексту #757575; */
+
+/* #FFFFFF; */
+
+body {
+    background-color: #E5E5E5;
+    color: #757575;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* header */
+
+.logo {
+    color: #212121;
+}
+.logo-part {
+    color:#2196F3;
+}
+
+.site-nav a {
+    color:#212121;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color:#2196F3 ;
+}
+
+/* hero */
+
+.hero-title {
+    color: #FFFFFF;
+}
+
+/* section */
+
+.section {
+    color: #212121;
+}
+
+.section-title {
+    color:#212121;
+}
