@@ -1,14 +1,18 @@
-/* #212121; */
 
-/* #2196F3; */
-
-/* колір основного тексту #757575; */
-
-/* #FFFFFF; */
+:root {
+    --primery-text-color: #E5E5E5;
+    --title-text-color: #757575; 
+    --accent-color: #2196F3;
+    --healines-text-color: #212121;
+    --hero-text-color: #FFFFFF;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+}
 
 body {
-    background-color: #E5E5E5;
-    color: #757575;
+    background-color: var(--primery-text-color);
+    color: var(--title-text-color);
+
+    font-family: Roboto, sans-serif;
 }
 
 ul {
@@ -19,14 +23,22 @@ ul {
 /* header */
 
 .logo {
-    color: #212121;
+    color: var(--healines-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+font-size: 26px;
+line-height: 1.19;
 }
+
 .logo-part {
-    color:#2196F3;
+    color: var(--accent-color);
 }
 
 .site-nav a {
-    color:#212121;
+    color: var(--healines-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
 }
 
 .site-nav a:hover,
@@ -34,18 +46,49 @@ ul {
     color:#2196F3 ;
 }
 
+
 /* hero */
 
 .hero-title {
-    color: #FFFFFF;
+    color: var(--hero-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
+
 
 /* section */
 
-.section {
-    color: #212121;
+.section .section-title {
+    color: var(--healines-text-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 
-.section-title {
-    color:#212121;
+.section .description {
+    color:var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+
+/* footer */
+.logo-footer{
+    color: var(--hero-text-color);
+    font-family: Raleway, sans-serif;
+}
+
+
+.address-footer
+ {
+    color: var(--hero-text-color);
+}
+    
+.contact-list a{
+    color: var(--footer-text-color);
 }
