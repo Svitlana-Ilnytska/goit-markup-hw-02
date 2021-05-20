@@ -1,17 +1,17 @@
 
 :root {
-    --primery-text-color: #E5E5E5;
+    --primery-background-color: #E5E5E5;
     --title-text-color: #757575; 
     --accent-color: #2196F3;
     --healines-text-color: #212121;
     --hero-text-color: #FFFFFF;
     --footer-text-color: rgba(255, 255, 255, 0.6);
+    --background-button-color: #F5F4FA;
 }
 
 body {
-    background-color: var(--primery-text-color);
+    background-color: var(--primery-background-color);
     color: var(--title-text-color);
-
     font-family: Roboto, sans-serif;
 }
 
@@ -26,8 +26,9 @@ ul {
     color: var(--healines-text-color);
     font-family: Raleway, sans-serif;
     font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
 }
 
 .logo-part {
@@ -39,6 +40,7 @@ line-height: 1.19;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    text-decoration: none;
 }
 
 .site-nav a:hover,
@@ -46,6 +48,9 @@ line-height: 1.19;
     color:#2196F3 ;
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
 
 /* hero */
 
@@ -59,6 +64,32 @@ line-height: 1.19;
     text-transform: uppercase;
 }
 
+.button {
+    color: var(--hero-text-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    cursor: pointer;
+    
+}
+
+.button-list {
+    color: var(--healines-text-color);
+    background-color: var(--background-button-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+}
+
+.button-list:hover,
+.button-list:focus {
+    color: var(--hero-text-color);
+    background-color: var(--accent-color);
+}
 
 /* section */
 
@@ -76,19 +107,61 @@ line-height: 1.19;
     line-height: 1.71;
 }
 
+.section-work {
+    color: var(--healines-text-color);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
 
+.section .coworkers {
+    color: var(--healines-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.section .specialty {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+
+}
+
+/* section portfolio */
+
+.section .list-works {
+    color: var(--healines-text-color);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+}
+.section .features {
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.87;  
+}
 /* footer */
 .logo-footer{
     color: var(--hero-text-color);
     font-family: Raleway, sans-serif;
+    text-decoration: none;
 }
-
 
 .address-footer
  {
     color: var(--hero-text-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
 }
     
 .contact-list a{
     color: var(--footer-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
 }
